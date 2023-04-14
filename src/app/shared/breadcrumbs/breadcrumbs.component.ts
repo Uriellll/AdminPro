@@ -8,7 +8,7 @@ import { filter, map } from 'rxjs/operators';
   templateUrl: './breadcrumbs.component.html',
   styles: [],
 })
-export class BreadcrumbsComponent implements OnIni, OnDestroy {
+export class BreadcrumbsComponent implements OnInit, OnDestroy {
   titulo: string = '';
   tituloSubs$!: Subscription;
   constructor(private router: Router) {
